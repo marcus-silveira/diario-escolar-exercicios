@@ -8,6 +8,8 @@ const clientes = [
   { id: 3, nome: "Gustavo Silva Junior", idade: 26 },
 ];
 
+
+// 1° método  - usando o for... of
 // Itera sobre o objeto clientes
 for (let cliente of clientes) {
 
@@ -23,3 +25,19 @@ for (let cliente of clientes) {
   // Exibe o resultado solicitado
   console.log(`${ultimoSobrenome}, ${primeiroNome}`)
 }
+
+
+// 2° método -  usando o forEach
+clientes.forEach(function(cliente) {
+  // Cria uma variável com o nome completo de cada cliente
+  let nome = cliente.nome.split(' ');
+  // usa o método pop para pegar o último item
+  let ultimoSobrenome = nome.pop();
+  // Usa o método shift para pegar o primeiro item
+  let primeiroNome = nome.shift();
+
+  // Exibe o resultado
+  console.log(ultimoSobrenome + ', ' + primeiroNome);
+});
+
+
