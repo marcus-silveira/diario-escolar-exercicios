@@ -34,6 +34,7 @@ function alertUser(message) {
 // Bônus:
 //     3) Qual a ordem dos prints no console?
 // A saída no console é a seguinte:
+
 // A função é: c
 // A função é: d
 // A função é: a
